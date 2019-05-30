@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 
 public class LegendView extends LinearLayout {
 
@@ -24,12 +23,12 @@ public class LegendView extends LinearLayout {
         this.name = name;
         init();
     }
-    public LegendView(Context context, @Nullable AttributeSet attrs) {
+    public LegendView(Context context,AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public LegendView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public LegendView(Context context,AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
