@@ -9,6 +9,6 @@ I've never actually seen the show
 #### I made the app with the intention of learning and get better at Swift
 
 ### Some images of the App:
-|<img src="images/print4.jpg" height="400">|<img src="images/print3.jpg" height="400">|<img src="images/print2.jpg" height="400">|<img src="images/print5.jpg" height="400">|
+|<img src="images/print5.jpg" height="400">|<img src="images/print2.jpg" height="400">|<img src="images/print3.jpg" height="400">|<img src="images/print4.jpg" height="400">|
 
 |<img src="images/print1.jpg" height="400">|<img src="images/print6.jpg" height="400">|<img src="images/print7.jpg" height="400">|<img src="images/print8.jpg" height="400">|
