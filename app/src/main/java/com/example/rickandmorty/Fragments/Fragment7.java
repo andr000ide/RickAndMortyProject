@@ -163,8 +163,6 @@ public class Fragment7 extends Fragment {
         Gson gson = new Gson();
         String json = mPreferences.getString("MyObject", "");
         List<Character> a = Arrays.asList(gson.fromJson(json, Character[].class));
-        TextView ab = rootView.findViewById(R.id.testar1);
-        TextView abc = rootView.findViewById(R.id.testar2);
         if(a.size()>0){
             String aux = a.get(0).name;
             //ab.setText(aux);

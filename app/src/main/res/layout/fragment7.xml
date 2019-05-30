@@ -44,14 +44,6 @@
             android:layout_height="100dp">
 
         </TableLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/testar1"
-        android:text="teste1"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/testar2"
-        android:text="teste2"/>
 
 
 
