@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmento4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/teste3"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/filtercharacters"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/constraint"
+                android:background="#cccccc"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/colocarImagem"
+                    android:scaleType="fitXY"
+                     />
+
+                <ImageView
+                    android:id="@+id/favorito"
+                    android:layout_margin="10dp"
+                    app:layout_constraintTop_toTopOf="@id/colocarImagem"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_star_border"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/transparent"
+                    android:background="#66000000"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:paddingStart="15dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Medium Text"
+                        android:textColor="#ffffff"
+                        android:textSize="35dp"
+                        android:id="@+id/nomeperso" />
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/background_personagem"
+                android:paddingTop="50dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="10dp">
+
+
+
+                <RelativeLayout
+                    android:paddingBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/textcolor_personagem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STATUS"
+                        android:layout_alignParentStart="true"
+                        />
+                    <TextView
+                        android:textColor="@color/statuscolor_personagem"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/status"
+                        android:text="Dead"/>
+
+                </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="7dp"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/textcolor_personagem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPECIES"
+                        android:layout_alignParentStart="true"
+                        />
+                    <TextView
+                        android:textColor="@color/statuscolor_personagem"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/species"
+                        android:text="Dead"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="7dp"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/textcolor_personagem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GENDER"
+                        android:layout_alignParentStart="true"
+                        />
+                    <TextView
+                        android:textColor="@color/statuscolor_personagem"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gender"
+                        android:text="Dead"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/originforLastlocation"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/textcolor_personagem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORIGIN"
+                        android:layout_alignParentStart="true"
+                        />
+                    <TextView
+                        android:textColor="@color/statuscolor_personagem"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/origin"
+                        android:text="Dead"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/lastlocation"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/textcolor_personagem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LAST\nLOCATION"
+
+                        android:layout_alignParentStart="true"
+                        />
+                    <TextView
+                        android:textColor="@color/statuscolor_personagem"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/location"
+                        android:text="Dead"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/episodios"
+                    android:paddingTop="10dp"
+                    android:layout_height="45dp"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/glow"
+                    android:text="EPISODES"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:background="@color/textcolor_personagem"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/reciclerAdapterEpisodes"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</ScrollView>

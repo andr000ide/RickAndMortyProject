@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#777777</color>
+    <color name="colorPrimaryDark">#555555</color>
+    <color name="colorAccent">#00ff00</color>
+    <color name="title">#47b5c7</color>
+    <color name="glow">#bee153</color>
+    <color name="background_main">#255843</color>
+    <color name="background_personagem">#333333</color>
+    <color name="background_search">#555555</color>
+    <color name="textcolor_personagem">#BBBBBB</color>
+    <color name="statuscolor_personagem">#ec8621</color>
+    <color name="color1">#ff3333</color>
+    <color name="color2">#ff9933</color>
+    <color name="color3">#ffff33</color>
+    <color name="color4">#99ff33</color>
+    <color name="color5">#33ff33</color>
+    <color name="color6">#33ff99</color>
+    <color name="color7">#33ffff</color>
+    <color name="color8">#3399ff</color>
+    <color name="color9">#3333ff</color>
+    <color name="color10">#9933ff</color>
+    <color name="color11">#ff33ff</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_texto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/s01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season 1" />
+        <RadioButton android:id="@+id/s02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season 2" />
+        <RadioButton android:id="@+id/s03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season 3" />
+    </RadioGroup>
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/testar1"
+        android:text="teste1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/testar2"
+        android:text="teste2"/>
+
+
+
+
+
+</LinearLayout>

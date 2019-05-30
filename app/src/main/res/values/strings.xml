@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="previous"><![CDATA[< Previous]]></string>
+    <string name="next"><![CDATA[Next >]]></string>
+</resources>
