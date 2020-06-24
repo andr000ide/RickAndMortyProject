@@ -56,10 +56,10 @@ public class Fragment1 extends Fragment implements FragsInterface {
 
             if (getActivity() != null) {
                 adapter = new RecicleAdapter(getActivity(), response);
-                if (response.info.next.equals("")) {
+                if (response.info.next != null && response.info.next.equals("") ) {
                     next.setEnabled(false);
                 } else next.setEnabled(true);
-                if (response.info.prev.equals("")) {
+                if (response.info.prev != null && response.info.prev.equals("")) {
                     previous.setEnabled(false);
                 } else previous.setEnabled(true);
 

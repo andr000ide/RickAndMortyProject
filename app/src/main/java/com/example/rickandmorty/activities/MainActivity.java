@@ -28,16 +28,11 @@ public class MainActivity extends AppCompatActivity{
 
         serviceHelp = ServicoHelperStatic.getInstance();
 
-        // chamar serviço
-        // usar cena estatica
-
-
         Services.getInstance(this).getCaracters(successListener, errorListener,"1");
 
         TextView tx = (TextView)findViewById(R.id.title);
         tx1 = (TextView)findViewById(R.id.info);
         tx1.setVisibility(View.INVISIBLE);
-
 
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/rick_morty.ttf");
 

@@ -154,11 +154,6 @@ public class Fragment3 extends Fragment {
         // comando para ficar smooth a scrollbar da recyclerview
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        //DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
-        //        DividerItemDecoration.VERTICAL);
-        //recyclerView.addItemDecoration(dividerItemDecoration);
-
-
         Services.getInstance(getActivity()).getLocations(successListener, errorListener,"1");
     }
 
@@ -166,13 +161,12 @@ public class Fragment3 extends Fragment {
     Response.Listener<LocationList> successListener = new Response.Listener<LocationList>() {
         @Override
         public void onResponse(LocationList response) {
-            //mudar isto
             adapter = new LocationsAdapter(getActivity(),response);
-            if(response.info.next.equals("")){
+            if(response.info.next != null && response.info.next.equals("")){
                 next.setEnabled(false);
             }
             else next.setEnabled(true);
-            if(response.info.prev.equals("")){
+            if(response.info.prev != null && response.info.prev.equals("")){
                 previous.setEnabled(false);
             }
             else previous.setEnabled(true);

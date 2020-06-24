@@ -106,16 +106,25 @@ public class Fragment7 extends Fragment {
             }
 
             System.out.println("ejdejed");
-            if(response.info.next.equals("")){
-                fazergrafico(season1);
-                tabela(season1);
-            }
-            else{
-                String nextpage = response.info.next;
-                String[] parts = nextpage.split("page=");
-                nextpage = parts[1];
-                Services.getInstance(getActivity()).getEpisodes(successListener, errorListener,nextpage);
-            }
+                if(response.info.next != null ){
+                    if( response.info.next.equals("")){
+                        fazergrafico(season1);
+                        tabela(season1);
+                    }
+                    else{
+                        String nextpage = response.info.next;
+                        String[] parts = nextpage.split("page=");
+                        nextpage = parts[1];
+                        Services.getInstance(getActivity()).getEpisodes(successListener, errorListener,nextpage);
+                    }
+                }
+                else{
+                    fazergrafico(season1);
+                    tabela(season1);
+                }
+
+
+
         }
     };
     Response.ErrorListener errorListener = new Response.ErrorListener() {

@@ -60,8 +60,6 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.MyVi
         this.mList=list;
     }
 
-
-
     @NonNull
     @Override
     //inflate the row layout from xml when needed

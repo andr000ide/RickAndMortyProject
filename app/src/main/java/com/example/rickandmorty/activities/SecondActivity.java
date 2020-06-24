@@ -121,7 +121,7 @@ public class SecondActivity extends AppCompatActivity implements NavigationView.
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+    public boolean onNavigationItemSelected( MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.nav_characters:
                 if (check != R.id.nav_characters) {

@@ -27,16 +27,6 @@ public class SectionsAdapter extends FragmentStatePagerAdapter {
         this.array=array;
     }
 
-    /*public void addFragment(Fragment fragment, String title){
-        mFragmentList.add(fragment);
-        mFragmentTitleList.add(title);
-    }*/
-
-   /* @Override
-    public Fragment getItem(int i) {
-        return mFragmentList.get(i);
-    }*/
-
     @Override
     public Fragment getItem(int i) {
         Fragment fragment = new Fragment1();
